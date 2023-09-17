@@ -5,11 +5,166 @@
       <a routerLink="about" class="py-2 px-3"
         >FIND NOW <i class="bi bi-search ms-2"></i>
       </a>
-      <a routerLink="about" class="py-2 px-3 mx-3">SignUp NOw </a>
+      <a
+        routerLink="."
+        class="py-2 px-3 mx-3"
+        data-bs-toggle="modal"
+        data-bs-target="#modalRegisterForm"
+        >Sign Up</a
+      >
     </div>
   </div>
 </div>
 
 <div class="container">
-  <div class="row">Helow there</div>
+  <div class="row mx-3 mt-5 mb-3">
+    <h1 class="text-center">About US</h1>
+  </div>
+  <div>
+    <div>
+      <section>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim
+        elementum nulla in venenatis. Vivamus eu nibh ultricies, vulputate erat
+        ac, aliquam quam. Aenean accumsan venenatis dolor et laoreet. Donec vel
+        lobortis ante. Proin iaculis magna non diam rutrum interdum. Sed nec
+        enim mattis, tempor tellus nec, mollis mauris. Donec leo odio,
+        pellentesque sit amet ante sed, varius placerat lectus. In hac habitasse
+        platea dictumst. Vivamus vulputate diam nisl, quis eleifend dui faucibus
+        sed. Pellentesque dapibus libero in risus tincidunt, quis blandit leo
+        accumsan. Sed finibus dapibus ipsum nec vulputate. Vivamus a tortor
+        magna. Sed cursus vitae quam id tincidunt.
+      </section>
+    </div>
+  </div>
+</div>
+<!-- SignUp Modal -->
+<div
+  class="modal fade"
+  id="modalRegisterForm"
+  tabindex="-1"
+  aria-labelledby="registerModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 fw-bolder">Sign up</h4>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="bi bi-person prefix grey-text"></i>
+          <input type="text" id="userName" class="form-control validate" />
+          <label
+            data-error="wrong"
+            data-success="right"
+            for="userName"
+            class="label"
+            >Your name</label
+          >
+        </div>
+        <div class="md-form mb-5">
+          <i class="bi bi-envelope prefix grey-text"></i>
+          <input type="email" id="email" class="form-control validate" />
+          <label
+            data-error="wrong"
+            data-success="right"
+            for="email"
+            class="label"
+            >Your email</label
+          >
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="bi bi-lock prefix grey-text"></i>
+          <input type="password" id="password" class="form-control validate" />
+          <label
+            data-error="wrong"
+            data-success="right"
+            for="password"
+            class="label"
+            >Your password</label
+          >
+        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-green">Sign up</button>
+      </div>
+      <div>
+        Already with Us?
+        <a
+          routerLink="."
+          data-bs-target="#loginModalLabel"
+          data-bs-toggle="modal"
+          data-bs-dismiss="modal"
+          >Sign In!</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Login Modal -->
+<div
+  class="modal fade"
+  id="loginModalLabel"
+  aria-hidden="true"
+  aria-labelledby="loginModalToggleLabel"
+  tabindex="-1"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 fw-bolder">Login</h4>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="bi bi-envelope prefix grey-text"></i>
+          <input type="email" id="email" class="form-control validate" />
+          <label
+            data-error="wrong"
+            data-success="right"
+            for="email"
+            class="label"
+            >Your email</label
+          >
+        </div>
+
+        <div class="md-form mb-4">
+          <i class="bi bi-lock prefix grey-text"></i>
+          <input type="password" id="password" class="form-control validate" />
+          <label
+            data-error="wrong"
+            data-success="right"
+            for="password"
+            class="label"
+            >Your password</label
+          >
+        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-green">Sign In</button>
+      </div>
+      <div>
+        New to the System?
+        <a
+          routerLink="."
+          data-bs-target="#modalRegisterForm"
+          data-bs-toggle="modal"
+          data-bs-dismiss="modal"
+          >Sign Up!</a
+        >
+      </div>
+    </div>
+  </div>
 </div>
