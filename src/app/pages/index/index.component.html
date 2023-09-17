@@ -1,0 +1,26 @@
+<div class="container">
+     <div class="d-flex justify-content-center">
+        <div class="input-group">
+            <select (change)="onSelect($event)" class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+              <option selected>Select State</option>
+              <option *ngFor="let states of state" value="{{states.id}}">{{states.name}}</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+              <option selected>Select City</option>
+              <option *ngFor="let cities of city" value="{{cities.id}}">{{cities.name}}</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+              <option selected>Select Category</option>
+              <option *ngFor="let catagories of catagory" value="{{catagories.id}}">{{catagories.name}}</option>
+            </select>
+          </div>
+    </div>
+
+    
+</div>
